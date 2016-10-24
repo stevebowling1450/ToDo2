@@ -1,0 +1,31 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.stveo.stevebowling.todo.MainActivity">
+    <item
+        android:id="@+id/app_bar_search"
+        android:actionViewClass="android.support.v7.widget.SearchView"
+        android:icon="@drawable/ic_search_black_24dp"
+        android:title="Search"
+        android:orderInCategory="100" />
+    <item
+        android:title="Shopping ToDo"
+        android:orderInCategory="102"
+        android:id="@+id/shopMenu" />
+    <item
+        android:id="@+id/personalMenu"
+        android:title="Personal ToDo"
+        android:orderInCategory="103" />
+    <item
+        android:id="@+id/workMenu"
+        android:orderInCategory="105"
+        android:title="Work ToDo"
+        />
+    <item
+        android:title="All Task"
+        android:orderInCategory="106" />
+    <item
+        android:title="Non-Completed Task"
+        android:orderInCategory="107"
+        android:id="@+id/nonCompleteMenu" />
+</menu>
