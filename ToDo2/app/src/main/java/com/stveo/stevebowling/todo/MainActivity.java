@@ -1,6 +1,7 @@
 package com.stveo.stevebowling.todo;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -8,6 +9,14 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.database.sqlite.SQLiteDatabase;
+import android.widget.AdapterView;
+import android.widget.ListView;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.StringTokenizer;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -18,14 +27,14 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        }
+    }
 
 
     // This is the method for my add button to go to my add page
-        public void onClickAdd(View view) {
-            Intent i = new Intent(this, addEdit.class);
-            startActivity(i);
-        }
+    public void onClickAdd(View view) {
+        Intent i = new Intent(this, addEdit.class);
+        startActivity(i);
+    }
 
 
     @Override

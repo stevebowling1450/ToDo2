@@ -6,26 +6,32 @@
         android:id="@+id/app_bar_search"
         android:actionViewClass="android.support.v7.widget.SearchView"
         android:icon="@drawable/ic_search_black_24dp"
-        android:title="Search"
-        android:orderInCategory="100" />
+        android:name="Search"
+        android:orderInCategory="100"
+        android:title="Search"/>
     <item
-        android:title="Shopping ToDo"
+        android:name="Shopping ToDo"
         android:orderInCategory="102"
-        android:id="@+id/shopMenu" />
+        android:id="@+id/shopMenu"
+        android:title="Shopping ToDO"/>
     <item
         android:id="@+id/personalMenu"
-        android:title="Personal ToDo"
-        android:orderInCategory="103" />
+        android:name="Personal ToDo"
+        android:orderInCategory="103"
+        android:title="Personal ToDO"/>
     <item
         android:id="@+id/workMenu"
         android:orderInCategory="105"
-        android:title="Work ToDo"
-        />
+        android:name="Work ToDo"
+        android:title="Work ToDO" />
     <item
-        android:title="All Task"
-        android:orderInCategory="106" />
+        android:name="All Task"
+        android:orderInCategory="106"
+        android:id="@+id/alltask"
+        android:title="All Task" />
     <item
-        android:title="Non-Completed Task"
+        android:name="Non-Completed Task"
         android:orderInCategory="107"
-        android:id="@+id/nonCompleteMenu" />
+        android:id="@+id/nonCompleteMenu"
+        android:title="Non-Completed Task"/>
 </menu>
